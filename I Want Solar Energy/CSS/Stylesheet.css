@@ -3,7 +3,8 @@
 body
 /* standard bg color is red */
 {
-font-family: Arial, Helvetica, sans-serif;
+	
+	font-family: Arial, Helvetica, sans-serif;
 	display: grid;
 	
 	grid-template-areas:
@@ -57,6 +58,7 @@ display: flex;
   grid-area: aside;
   display: flex;
   background-color: #8A2BE2;
+  
 }
 
 footer{
