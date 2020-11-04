@@ -150,3 +150,20 @@ footer{
 	background-color: maroon;
 }
 
+/*CSS VOOR EUSOLAR */
+.tablewrapper{
+	display: grid;
+	display-template-columns: auto auto;
+	grid-template-areas: "eutable asidetable";
+}
+
+.gridtable{
+	grid-area: eutable;
+	background-color: maroon;
+}
+
+.gridasidetable{
+	grid-area: asidetable;
+	background-color: lime;
+}
+
