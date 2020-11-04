@@ -5,6 +5,11 @@ body
 {
 	
 	font-family: Arial, Helvetica, sans-serif;
+
+}
+
+.wrapper
+{
 	display: grid;
 	
 	grid-template-areas:
@@ -13,7 +18,8 @@ body
 	"navi navi navi" 
 	"movie movie movie"
 	"article article aside"
-	"copy copy cookie";
+	"copy copy cookie";	
+		
 }
 
 p{
@@ -37,10 +43,12 @@ nav{
 
 #Articles{
   grid-area: article;
-display: flex;
- border: : 1px #ccc solid;
- flex-direction: column;
- background-color: #7FFFD4;
+  grid-auto-rows: minmax(100px, auto)
+	display: flex;
+	border: : 1px #ccc solid;
+	flex-direction: column;
+	background-color: #7FFFD4;
+	
  
 }
 
@@ -56,6 +64,7 @@ display: flex;
 }
 #Aside{
   grid-area: aside;
+
   display: flex;
   background-color: #8A2BE2;
   
