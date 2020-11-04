@@ -8,6 +8,16 @@ body
 
 }
 
+.Cookies{
+	position: fixed;
+	right: 0;
+	bottom: 0;
+	background-color: #FA0;
+	color: #FFF;
+	opacity: 50%;
+	z-index: 10;
+}
+
 /* INDEX PAGE */
 .index
 {
@@ -26,7 +36,7 @@ body
 
 
 p{
-	font-family: 'Notable';
+/*	font-family: 'Notable'; */
 }
 
 header{
@@ -69,34 +79,29 @@ footer{
   background-color: #5F9EA0;
 }
 
-#Cookies{
-  grid-area: cookie;
-  background-color: #FF00FF;
-}
 
 /* HOW SOLAR WORKS PAGE */
-.howsolarworks
+.articlewrapper
 {
 	display: grid;
-	
+	display-template-columns: auto auto auto;
 	grid-template-areas:
-	"headersol headersol headersol"
-	"navisol navisol navisol"
 	"art2 art1 art3"
 	"art2 art1 art3"
 	"art5 art1 art3"
 	"art5 art1 art4"
 	"art5 art1 art4"
 	"art5 art1 art4"
-	"art5 art6 art6"
-	"asidesol asidesol asidesol"
-	"copysol copysol cookiesol"
+	"art5 art6 art6";
+
+	grid-gap: 10px;
+	
 }
 
 .headersol
 {
 	grid-area: headersol;
-	background-color: #FF00FF;
+	background-color: hsl(308, 100%, 50%);
 }
 
 .navisol
@@ -104,3 +109,44 @@ footer{
 	grid-area: navisol;
 	background-color: #5F9EA0;
 }
+
+.artsol1{
+	grid-area: art1;
+	background-color: darkolivegreen;
+}
+
+.artsol2{
+	grid-area: art2;
+	background-color: deeppink;
+}
+.artsol3{
+	grid-area: art3;
+	background-color: gold;
+}
+
+.artsol4{
+	grid-area: art4;
+	background-color: indianred;
+}
+
+.artsol5{
+	grid-area: art5;
+	background-color: khaki;
+}
+
+.artsol6{
+	grid-area: art6;
+	background-color: lightgrey;
+}
+
+.asidesol{
+	text-align: center;
+	grid-area: asidesol;
+	background-color: lime;
+}
+
+.footersol{
+	grid-area: copysol;
+	background-color: maroon;
+}
+
