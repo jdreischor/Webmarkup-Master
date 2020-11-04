@@ -1,4 +1,4 @@
-@import url ("https://fonts.googleapis.com/css?family=Notable");
+@import url("https://fonts.googleapis.com/css?family=Notable");
 
 body
 /* standard bg color is red */
@@ -8,7 +8,8 @@ body
 
 }
 
-.wrapper
+/* INDEX PAGE */
+.index
 {
 	display: grid;
 	
@@ -21,6 +22,8 @@ body
 	"copy copy cookie";	
 		
 }
+
+
 
 p{
 	font-family: 'Notable';
@@ -43,25 +46,16 @@ nav{
 
 #Articles{
   grid-area: article;
-  grid-auto-rows: minmax(100px, auto)
+  grid-auto-rows: minmax(100px, auto);
 	display: flex;
-	border: : 1px #ccc solid;
+	border: 1px #ccc solid;
 	flex-direction: column;
 	background-color: #7FFFD4;
 	
  
 }
 
-.Article1{
-  
-}
 
-.Article2{
-  
-}
-.Article3{
-  
-}
 #Aside{
   grid-area: aside;
 
@@ -78,4 +72,35 @@ footer{
 #Cookies{
   grid-area: cookie;
   background-color: #FF00FF;
+}
+
+/* HOW SOLAR WORKS PAGE */
+.howsolarworks
+{
+	display: grid;
+	
+	grid-template-areas:
+	"headersol headersol headersol"
+	"navisol navisol navisol"
+	"art2 art1 art3"
+	"art2 art1 art3"
+	"art5 art1 art3"
+	"art5 art1 art4"
+	"art5 art1 art4"
+	"art5 art1 art4"
+	"art5 art6 art6"
+	"asidesol asidesol asidesol"
+	"copysol copysol cookiesol"
+}
+
+.headersol
+{
+	grid-area: headersol;
+	background-color: #FF00FF;
+}
+
+.navisol
+{
+	grid-area: navisol;
+	background-color: #5F9EA0;
 }
