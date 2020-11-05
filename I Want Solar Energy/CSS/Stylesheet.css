@@ -151,19 +151,45 @@ footer{
 }
 
 /*CSS VOOR EUSOLAR */
-.tablewrapper{
+.eusolarwrapper
+{
 	display: grid;
 	display-template-columns: auto auto;
-	grid-template-areas: "eutable asidetable";
+	grid-template-areas:
+	"table aside";
+
+	grid-gap: 10px;
+	
 }
 
-.gridtable{
-	grid-area: eutable;
-	background-color: maroon;
+.eutable{
+	grid-area: table;
+	background-color: mediumorchid;
 }
 
-.gridasidetable{
-	grid-area: asidetable;
-	background-color: lime;
+.euaside{
+	grid-area: aside;
+	background-color: mediumspringgreen;
 }
 
+/*CSS VOOR CONTACT*/
+.formwrapper
+{
+	display: grid;
+	display-template-columns: auto auto;
+	grid-template-areas:
+	"form aside";
+
+	grid-gap: 10px;
+	
+}
+
+.contact{
+	grid-area: form;
+	background-color: mediumorchid;
+}
+
+.contactside{
+	grid-area: aside;
+	background-color: mediumspringgreen;
+}
