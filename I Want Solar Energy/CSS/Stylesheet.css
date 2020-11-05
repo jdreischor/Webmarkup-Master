@@ -9,6 +9,23 @@ body
 
 }
 
+header{
+	font-family: "Notable";
+	text-align: center;
+	
+  }
+
+  p{
+	/*	font-family: 'Notable'; */
+	}
+	
+	
+	
+	nav{
+	  background-color: cornflowerblue;
+	  border-bottom: black;
+	 }
+
 .Cookies{
 	position: fixed;
 	right: 0;
@@ -35,6 +52,10 @@ body
 
 }
 
+nav a{
+	text-align: center;
+}
+
 ul{
 	list-style-type: none;
 	margin: 0;
@@ -57,7 +78,7 @@ li a{
 
 
 
-/* INDEX PAGE */
+/*CSS VOOR INDEX PAGE */
 .flex1{
 	display: flex;
 	flex-direction: column;
@@ -73,55 +94,33 @@ li a{
 	float: right;
 }
 
-
-
-p{
-/*	font-family: 'Notable'; */
-}
-
-header{
-  background-color: #BDB76B;
-  
-}
-
-nav{
-  background-color: #CD5C5C;
- 
-}
-
 #Movie{
-  background-color: #FF8C00;
-  width: 100%;
+ 	width: 100%;
 }
 
 #Articles{
   
   grid-auto-rows: minmax(100px, auto);
 	display: flex;
-	border: 1px #ccc solid;
 	flex-direction: column;
-	background-color: #7FFFD4;
-	
- 
 }
-
 
 .asideindex{
 	float: right;
-	
 	width: 100%;
 	display: flex;
-  	background-color: #8A2BE2;
-  
-}
+  }
 
 footer{
-  grid-area: copy;
-  background-color: #5F9EA0;
+  border-top: black;
+}
+
+.footerarticle{
+	float: right;
 }
 
 
-/* HOW SOLAR WORKS PAGE */
+/* CSS VOOR HOW SOLAR WORKS */
 .articlewrapper
 {
 	display: grid;
@@ -133,22 +132,31 @@ footer{
 	"art5 art1 art4"
 	"art5 art1 art4"
 	"art5 art1 art4"
-	"art5 art6 art6";
+	"art5 art6 art6"
+	"asi asi asi"
+	"copy copy cookie"
+	;
 
 	grid-gap: 10px;
 	
 }
 
-.headersol
-{
-	grid-area: headersol;
-	background-color: hsl(308, 100%, 50%);
+.asidesol{
+	display: grid;
+	display-template-columns: auto auto auto;
+	grid-template-areas: "as1 as2 as3";
 }
 
-.navisol
-{
-	grid-area: navisol;
-	background-color: #5F9EA0;
+.asidesol1{
+	grid-area: as1;
+}
+
+.asidesol2{
+	grid-area: as2;
+}
+
+.asidesol3{
+	grid-area: as3;
 }
 
 .artsol1{
@@ -182,12 +190,12 @@ footer{
 
 .asidesol{
 	text-align: center;
-	grid-area: asidesol;
+	grid-area: asi;
 	background-color: lime;
 }
 
 .footersol{
-	grid-area: copysol;
+	grid-area: copy;
 	background-color: maroon;
 }
 
@@ -233,4 +241,52 @@ footer{
 .contactside{
 	grid-area: aside;
 	background-color: mediumspringgreen;
+}
+
+@media only screen and (max-width: 1180px){
+	.articlewrapper
+	{
+		display: grid;
+		display-template-columns: auto auto;
+		grid-template-areas:
+		"art1 art2"
+		"art1 art2"
+		"art3 art2"
+		"art3 art5"
+		"art3 art5"
+		"art3 art5"
+		"art6 art6"
+		"art6 art6";
+	
+		grid-gap: 10px;
+		
+	}
+
+	.artsol1{
+		grid-area: art1;
+	}
+
+	.artsol2{
+		grid-area: art2;
+	}
+
+	.artsol3{
+		grid-area: art3;
+	}
+
+	.artsol4{
+		grid-area: art4;
+	}
+
+	.artsol5{
+		grid-area: art5;
+	}
+
+	.artsol6{
+		grid-area: art6;
+	}
+}
+
+@media only screen and (max-width: 480px){
+
 }
