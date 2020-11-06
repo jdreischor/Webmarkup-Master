@@ -129,10 +129,16 @@ label{
     grid-template-columns: 1fr 1fr 1fr;
 	grid-template-areas:
 	"EUART EUART EUART"
-	"EUTABLE EUTABLE EUASI"
-	"EUFOOT EUFOOT EUASI";
+	"EUTABLE EUTABLE EUASI1"
+	"EUTABLE EUTABLE EUASI2"
+	"EUTABLE EUTABLE EUASI3"
+	"EUFOOT EUFOOT EUASI3";
 }
 
+.footereusolar{
+	grid-area: EUFOOT;
+	background-color: darkviolet;
+}
 .arteusolar{
 	grid-area: EUART;
 	background-color: darkolivegreen;
@@ -143,14 +149,44 @@ label{
 	background-color: darkseagreen;
 }
 
-.footereusolar{
-	grid-area: EUFOOT;
-	background-color: darkslateblue;
+.euaside1{
+	grid-area: EUASI1;
+	background-color: darkturquoise;
 }
 
-.euaside{
-	grid-area: EUASI;
+.euaside2{
+	grid-area: EUASI2;
 	background-color: darkturquoise;
+}
+
+.euaside3{
+	grid-area: EUASI3;
+	background-color: darkturquoise;
+}
+
+/*CONTACT PAGE*/
+.gridcontact{
+	width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+	grid-template-areas:
+	"CON CON CON"
+	"FORM FORM ASIC";
+}
+
+.contactinfo{
+	grid-area: CON;
+	background-color: deepskyblue;
+}
+
+.contact{
+	grid-area: FORM;
+	background-color: dimgrey;
+}
+
+.contactside{
+	grid-area: ASIC;
+	background-color: fuchsia;
 }
 
 
@@ -203,7 +239,23 @@ label{
 
     .asidesolar3{
         display: none;
-    }
+	}
+	
+	/*EU SOLAR TABLET*/
+.eusolargrid{
+	width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+	grid-template-areas:
+	"EUART EUART"
+	"EUTABLE EUTABLE"
+	"EUFOOT EUFOOT"
+	"EUASI2 EUASI3";
+}
+
+.euaside1{
+	display: none;
+}
 
 }
 
@@ -287,8 +339,28 @@ label{
 
     .artsolar6{
         display: none;
-    }
+	}
+	
+		/*EU SOLAR MOBILE*/
+.eusolargrid{
+	width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+	grid-template-areas:
+	"EUTABLE EUTABLE"
+	"EUFOOT EUFOOT"
+	"EUASI1 EUASI1"
+	"EUASI2 EUASI2"
+	"EUASI3 EUASI3";
+}
 
+.arteusolar{
+	display: none;
+}
+
+.euaside1{
+	
+}
 
 }
 
