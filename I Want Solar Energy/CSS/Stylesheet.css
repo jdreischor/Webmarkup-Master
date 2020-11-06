@@ -122,6 +122,37 @@ label{
     background-color: mediumslateblue;
 }
 
+/*EU SOLAR PAGE*/
+.eusolargrid{
+	width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+	grid-template-areas:
+	"EUART EUART EUART"
+	"EUTABLE EUTABLE EUASI"
+	"EUFOOT EUFOOT EUASI";
+}
+
+.arteusolar{
+	grid-area: EUART;
+	background-color: darkolivegreen;
+}
+
+#eusolartable{
+	grid-area: EUTABLE;
+	background-color: darkseagreen;
+}
+
+.footereusolar{
+	grid-area: EUFOOT;
+	background-color: darkslateblue;
+}
+
+.euaside{
+	grid-area: EUASI;
+	background-color: darkturquoise;
+}
+
 
 @media only screen and (max-width: 1180px){
     
