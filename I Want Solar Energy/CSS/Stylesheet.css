@@ -1,14 +1,43 @@
 /* START OF PAGE AND STANDARD CSS */
 
+body{
+	font-family: Arial, Helvetica, sans-serif;
+	
+	
+}
 .header{
     grid-area: HS;
-    background-color: orange;
-    color: palegreen;
+    text-align: center;
 }
+
+ul {
+	text-align: center;
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: #1e86ba;
+  }
+  
+  li {
+	float: left;
+  }
+  
+  li a {
+	display: block;
+	color: white;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+  }
+  
+  li a:hover {
+	background-color:#145a7d;
+  }
 
 .nav{
     grid-area: NS;  
-    background-color: coral;
+    
 }
 
 #toggle{
@@ -19,15 +48,19 @@ label{
     visibility: hidden;
 }
 
+header{
+	text-align: center;
+}
+
 
 .copyright{
     grid-area: CS;
-    background-color: mediumvioletred;
 }
 
 .cookies{
     grid-area: COS;
-    background-color: olive;
+	background-color: #FA0;
+	opacity: 50%;
     right: 0;
     bottom: 0;
     position: fixed;
@@ -40,19 +73,24 @@ label{
     flex-wrap: wrap;
 }
 
-#movie{
-    width: 100%;
-    background-color: violet;
+video{
+	width: 100%;
 }
 
 #ArticlesIndex{
-    background-color: wheat;
     width: 70%;
+}
+
+.imgartindex{
+	float: right;
+}
+
+.pindex{
+	text-align: left;
 }
 
 .asideIndex{
     flex-shrink: 0;
-    background-color: yellowgreen;
     width: 30%;
 }
 
@@ -78,48 +116,55 @@ label{
 
 
 .artsolar1{
-    grid-area: AS1;
-    background-color: crimson;
+	grid-area: AS1;
+	background-color: #62b8e3;
 }
 
 .artsolar2{
-    grid-area: AS2;
-    background-color: darkmagenta;
+	grid-area: AS2;
+	background-color: #3f8ab0;
 }
 
 .artsolar3{
-    grid-area: AS3;
-    background-color: darkslateblue;
+	grid-area: AS3;
+	background-color: #1c5e80;
 }
 
 .artsolar4{
-    grid-area: AS4;
-    background-color: deepskyblue;
+	grid-area: AS4;
+	background-color: #76b5d6;
 }
 
 .artsolar5{
-    grid-area: AS5;
-    background-color: goldenrod;
+	grid-area: AS5;
+	background-color: whitesmoke;
 }
 
 .artsolar6{
-    grid-area: AS6;
-    background-color: lightgrey;
+	grid-area: AS6;
+	background-color: turquoise;
 }
 
 .asidesolar1{
-    grid-area: ASIS1;
-    background-color: limegreen;
+	grid-area: ASIS1;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	
 }
 
 .asidesolar2{
-    grid-area: ASIS2;
-    background-color: mediumblue;
+	grid-area: ASIS2;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 .asidesolar3{
-    grid-area: ASIS3;
-    background-color: mediumslateblue;
+	grid-area: ASIS3;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 /*EU SOLAR PAGE*/
@@ -137,31 +182,44 @@ label{
 
 .footereusolar{
 	grid-area: EUFOOT;
-	background-color: darkviolet;
 }
 .arteusolar{
 	grid-area: EUART;
-	background-color: darkolivegreen;
+	background-color: #3f8ab0;
 }
 
 #eusolartable{
 	grid-area: EUTABLE;
-	background-color: darkseagreen;
+}
+
+th {
+	background-color: #1c5e80;
+	color: white;
+  }
+
+tr:nth-child(even){
+	background-color: #76b5d6;
 }
 
 .euaside1{
 	grid-area: EUASI1;
-	background-color: darkturquoise;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 .euaside2{
 	grid-area: EUASI2;
-	background-color: darkturquoise;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 .euaside3{
 	grid-area: EUASI3;
-	background-color: darkturquoise;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 /*CONTACT PAGE*/
@@ -206,10 +264,19 @@ label{
     }
     
     .asideIndex{
-        background-color: yellowgreen;
+		background-color: yellowgreen;
+		flex-shrink: 0;
         width: 100%;
         order: 1;
-    }
+	}
+	
+	.imgartindex{
+		float: left;
+	}
+
+	.pindex{
+		text-align: right;
+	}
     
     /*HOW SOLAR WORKS TABLET*/
     .gridsolar{
@@ -318,10 +385,21 @@ label{
         background-color: wheat;
         width: 100%;
         order: 3;
-    }
+	}
+	
+	.imgartindex{
+		
+		float: unset;
+		width: 50%;
+	}
+
+	.pindex{
+		text-align: center;
+	}
     
     .asideIndex{
-        background-color: yellowgreen;
+		background-color: yellowgreen;
+		flex-shrink: 0;
         width: 100%;
         order: 1;
     }
@@ -355,8 +433,12 @@ label{
     .artsolar6{
         display: none;
 	}
+
+	.asidesolar3{
+        display: initial;
+	}
 	
-		/*EU SOLAR MOBILE*/
+/*EU SOLAR MOBILE*/
 .eusolargrid{
 	width: 100%;
     display: grid;
@@ -374,7 +456,7 @@ label{
 }
 
 .euaside1{
-	
+	display: initial;
 }
 
 /*CONTACT MOBILE*/
