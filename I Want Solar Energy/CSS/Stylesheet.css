@@ -257,11 +257,26 @@ label{
 	display: none;
 }
 
+/*CONTACT TABLET*/
+.gridcontact{
+	width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+	grid-template-areas:
+	"CON CON"
+	"FORM ASIC";
 }
+
+}
+
 
 @media only screen and (max-width: 480px){
    
    /*STANDARD CSS MOBILE*/
+
+   .flexhead{
+	   display: flex;
+   }
     label{
         visibility: visible;
         display: block;
@@ -360,6 +375,17 @@ label{
 
 .euaside1{
 	
+}
+
+/*CONTACT MOBILE*/
+.gridcontact{
+	width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+	grid-template-areas:
+	"CON CON"
+	"FORM FORM"
+	"ASIC ASIC";
 }
 
 }
