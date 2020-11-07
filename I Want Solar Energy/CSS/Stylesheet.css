@@ -98,6 +98,10 @@ video{
 	width: 100%;
 }
 
+.Article{
+	display: flex;
+}
+
 #ArticlesIndex{
     width: 70%;
 }
@@ -114,6 +118,8 @@ video{
     flex-shrink: 0;
     width: 30%;
 }
+
+
 
 /* HOW SOLAR WORKS PAGE */
 .gridsolar{
@@ -328,6 +334,15 @@ input{
 	.pindex{
 		text-align: right;
 	}
+
+	.sectionarticle{
+		order: 2;
+	}
+
+	.imgartindex{
+		order: 1;
+	}
+
     
     /*HOW SOLAR WORKS TABLET*/
     .gridsolar{
@@ -429,17 +444,26 @@ input{
     video{
        display: none;
     }
-    
+	
+	.Article{
+		display: flex;
+		flex-direction: column;
+	}
+
+	.sectionarticle{
+		order: 1;
+	}
     #ArticlesIndex{
-        background-color: wheat;
         width: 100%;
         order: 3;
 	}
+
 	
 	.imgartindex{
-		
+		order: 2;
 		float: unset;
 		width: 50%;
+		margin: auto;
 	}
 
 	.pindex{
@@ -447,7 +471,6 @@ input{
 	}
     
     .asideIndex{
-		background-color: yellowgreen;
 		flex-shrink: 0;
         width: 100%;
         order: 1;
