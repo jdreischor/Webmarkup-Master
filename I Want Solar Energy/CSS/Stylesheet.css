@@ -85,13 +85,15 @@ h2{
     right: 0;
     bottom: 0;
     position: fixed;
-    width: 34%;
+	width: 34%;
+	z-index: 9999;
 }
 
 /* INDEX PAGE */
 .flex{
     display: flex;
-    flex-wrap: wrap;
+	flex-wrap: wrap;
+	flex-grow: 0;
 }
 
 video{
@@ -114,9 +116,14 @@ video{
 	text-align: left;
 }
 
+.indexasideflex{
+	display: flex;
+	flex-direction: column;
+}
 .asideIndex{
     flex-shrink: 0;
-    width: 30%;
+	width: 30%;
+	flex-direction: column;
 }
 
 
@@ -308,8 +315,8 @@ input{
 }
 
 
-@media only screen and (max-width: 1180px){
-    
+@media screen and (min-width: 481px) and (max-width: 1279px){
+  
     /*INDEX TABLET*/
     #movie{
         width: 100%;
@@ -401,7 +408,7 @@ input{
 	}
 }
 
-@media only screen and (max-width: 480px){
+@media screen and (max-width: 480px){
    
    /*STANDARD CSS MOBILE*/
 
