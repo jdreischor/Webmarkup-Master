@@ -6,18 +6,19 @@
 			type ="text/css"
 			href = "css/stylesheet.css"
 		/>
-		<title> EU Solar </title>
+		<title> Contact </title>
 		<meta charset="utf-8"/>
 		<meta name="keywords" content="HTML, CSS, Solar Energy">
 		<meta name="description" content="Inspiring you to switch to solar power">
 		<meta name="author" content="Jacintha Dreischor">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
 	</head>
     <body>
 		<section class="flexhead">
         <header class="header">
             <section class="logo">
-            <img src="img/sun-3-xxl.png">
+            <img title="logo" src="img/sun-3-xxl.png">
             </section>
 
             <section class="title">
@@ -30,13 +31,13 @@
         </header>
 
         <nav class="nav">
-            <label for="toggle">&#9776</label>
+            <label class="labelmenu" for="toggle">&#9776;</label>
             <input type="checkbox" id="toggle">
             <nav class="menu">
             <ul>
-				<li><a href="howsolarworks.html">How solar works</a></li>
 				<li><a href="Index.html">Home</a></li>
-				<li><a href="contact.html">Contact</a></li>
+				<li><a href="howsolarworks.html">How solar works</a></li>
+				<li><a href="eusolar.html">EU Solar</a></li>
             </ul>
             </nav>
 		</nav>
@@ -47,18 +48,18 @@
 			<section class="contactinfo">
 				<p>Contact informatie</p>
 			</section>
+		
 			<form
 				class="contact"
 				action = "https://i-want-solar-energy.com/testform.php"
 				method = "post">
-			
-				<fieldset>
-					<legend>Contactformulier</legend>
+			<fieldset>
+					<legend>Vul uw gegevens in</legend>
 					<label for="name">Naam:</label>
 					<input type="text" id="name" name="name" placeholder="John Doe">
 
 					<label for="email">E-mail:</label>
-					<input type="email" id="email" name="email" placeholder="J.doe@gmail.com">
+					<input type="email" id="email" name="email" placeholder="j.doe@gmail.com">
 
 				<label for="message">Bericht:</label>
 				<textarea id="message" name="message" placeholder="Begin met typen..."></textarea>
@@ -69,16 +70,17 @@
 		<aside class="contactside">
 				<figure>
 					<a href="https://www.ikwilzonneenergie.nl">
-					<img src="img/Omvormer.PNG" alt="Sunny Boy" width="150px" height="150px">
+					<img title="omvormer" src="img/Omvormer.PNG" alt="Sunny Boy" width="150" height="150">
 					</a>
 				</figure>
 				<figure>
 					<a href="https://www.ikwilzonneenergie.nl">
-					<img src="img/Laadregelaar.png" alt="Sunny Boy" width="150px" height="150px">
+					<img title="Laadregelaar" src="img/Laadregelaar.png" alt="Laadregelaar" width="150" height="150">
+					</a>
 				</figure>
 				<figure>
 					<a href="https://www.ikwilzonneenergie.nl">
-					<img src="img/Energieset.PNG" alt="Energieset" width="150px" height="150px">
+					<img title="Energieset" src="img/Energieset.PNG" alt="Energieset" width="150" height="150">
 					</a>
 				</figure>
 			</aside>
@@ -86,8 +88,6 @@
  <!-- END OF PAGE SETUP -->
  <footer class="copyright">&copy; Jacintha Dreischor</footer>
  <section class="cookies">Cookie statement</section>
-
- </section>
 
 </body>
 </html>

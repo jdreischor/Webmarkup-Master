@@ -1,13 +1,27 @@
 /* START OF PAGE AND STANDARD CSS */
+@import url("https://fonts.googleapis.com/css?family=Notable");
 
 body{
 	font-family: Arial, Helvetica, sans-serif;
+	letter-spacing: 1px;
 	
 	
 }
 .header{
     grid-area: HS;
     text-align: center;
+}
+
+.header,h1{
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+.header h2{
+	font-size: 30px;
+}
+
+a:active{
+	color: midnightblue;
 }
 
 ul {
@@ -17,6 +31,7 @@ ul {
 	padding: 0;
 	overflow: hidden;
 	background-color: #1e86ba;
+	font-size: 1em;
   }
   
   li {
@@ -30,10 +45,6 @@ ul {
 	padding: 14px 16px;
 	text-decoration: none;
   }
-  
-  li a:hover {
-	background-color:#145a7d;
-  }
 
 .nav{
     grid-area: NS;  
@@ -44,12 +55,19 @@ ul {
     visibility: hidden;
 }
 
-label{
-    visibility: hidden;
+.labelmenu{
+	visibility: hidden;
 }
 
 header{
 	text-align: center;
+	font-family: "Notable";
+}
+
+
+h2{
+	text-align: center;
+	font-family: "Notable";
 }
 
 
@@ -96,6 +114,7 @@ video{
 
 /* HOW SOLAR WORKS PAGE */
 .gridsolar{
+	line-height: 1.6;
     width: 100%;
     display: grid;
     height: 100vh;
@@ -179,6 +198,9 @@ video{
 	"EUTABLE EUTABLE EUASI3"
 	"EUFOOT EUFOOT EUASI3";
 }
+#tablehead{
+	text-transform: uppercase;
+}
 
 .footereusolar{
 	grid-area: EUFOOT;
@@ -186,10 +208,15 @@ video{
 .arteusolar{
 	grid-area: EUART;
 	background-color: #3f8ab0;
+	text-indent: 30px;
 }
 
 #eusolartable{
 	grid-area: EUTABLE;
+	word-spacing: 0.3rem;
+	border-color: #3f8ab0;
+	border-style: double;
+	border-width: 2px;
 }
 
 th {
@@ -197,8 +224,13 @@ th {
 	color: white;
   }
 
-tr:nth-child(even){
-	background-color: #76b5d6;
+th:first-child{
+	background-color: #FF0;
+}
+
+tr:nth-child(odd){
+	background-color: #CFF;
+	
 }
 
 .euaside1{
@@ -232,19 +264,34 @@ tr:nth-child(even){
 	"FORM FORM ASIC";
 }
 
+input{
+	width: 100%;
+	width: 100%;
+	padding: 12px 20px;
+	margin: 8px 0;
+	box-sizing: border-box;
+  }
+
+  textarea{
+	width: 100%;
+	width: 100%;
+	padding: 12px 20px;
+	margin: 8px 0;
+	box-sizing: border-box; 
+  }
+
 .contactinfo{
 	grid-area: CON;
 	background-color: deepskyblue;
+	position: relative;
 }
 
 .contact{
 	grid-area: FORM;
-	background-color: dimgrey;
 }
 
 .contactside{
 	grid-area: ASIC;
-	background-color: fuchsia;
 }
 
 
@@ -253,18 +300,15 @@ tr:nth-child(even){
     /*INDEX TABLET*/
     #movie{
         width: 100%;
-        background-color: violet;
         order: 2;
     }
     
     #ArticlesIndex{
-        background-color: wheat;
         width: 100%;
         order: 3;
     }
     
     .asideIndex{
-		background-color: yellowgreen;
 		flex-shrink: 0;
         width: 100%;
         order: 1;
@@ -344,7 +388,7 @@ tr:nth-child(even){
    .flexhead{
 	   display: flex;
    }
-    label{
+    .labelmenu{
         visibility: visible;
         display: block;
         cursor: pointer;
