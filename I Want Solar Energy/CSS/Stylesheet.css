@@ -1,9 +1,16 @@
 /* START OF PAGE AND STANDARD CSS */
 @import url("https://fonts.googleapis.com/css?family=Notable");
 
+html{
+	width: 100%;
+	height: 100%;
+}
+
 body{
 	font-family: Arial, Helvetica, sans-serif;
 	letter-spacing: 1px;
+	height: 100%;
+	width: 100%;
 }
 
 header::first-letter{
@@ -75,8 +82,9 @@ h2{
 
 
 .copyright{
-    grid-area: CS;
-}
+	grid-area: CS;
+	bottom: 0;
+    }
 
 .cookies{
     grid-area: COS;
@@ -108,7 +116,7 @@ video{
     width: 70%;
 }
 
-.imgartindex{
+.sectionimage{
 	float: right;
 }
 
@@ -272,8 +280,7 @@ tr:nth-child(odd){
 
 /*CONTACT PAGE*/
 .gridcontact{
-	width: 100%;
-    display: grid;
+	display: grid;
     grid-template-columns: 1fr 1fr 1fr;
 	grid-template-areas:
 	"CON CON CON"
@@ -312,6 +319,9 @@ input{
 
 .contactside{
 	grid-area: ASIC;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 
@@ -334,7 +344,7 @@ input{
         order: 1;
 	}
 	
-	.imgartindex{
+	.sectionimage{
 		float: left;
 	}
 
@@ -346,7 +356,7 @@ input{
 		order: 2;
 	}
 
-	.imgartindex{
+	.sectionimage{
 		order: 1;
 	}
 
@@ -466,7 +476,7 @@ input{
 	}
 
 	
-	.imgartindex{
+	.sectionimage{
 		order: 2;
 		float: unset;
 		width: 50%;
